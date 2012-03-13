@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">Yet Another Micro Blogging App</string>
+    <string name="status_title">Status Update</string>
+    <string name="postButtonText">Post Tweet</string>
+    <string name="statusHint">Type in the status update up to 140 characters</string>
+    <string name="loginui_title">Login to service</string>
+    <string name="username_prompt">Username</string>
+    <string name="password_prompt">Password</string>
+    <string name="loginRequestButtonTitle">&quot;Login&quot;</string>
+    <string-array name="servicesSpinnerItems">
+        <item>"Twitter"</item>
+        <item>"Facebook"</item>
+        <item>"my_Space"</item>
+    </string-array>
+        <string name="ShowpublicTimelineButtonText">Public Timeline</string>
+        <string name="post_success">Successful post</string>
+        <string name="post_fail">Failed to post</string>
+
+</resources>

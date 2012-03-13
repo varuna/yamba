@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_highlight">#2F2</color>
+    <color name="rootBackground">#45F</color>
+    <color name="default_color">#FFF</color>
+    <color name="semi_transparent">#AFFF</color>
+    
+</resources>

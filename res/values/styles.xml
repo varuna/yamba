@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="title_style" parent="android:Widget.TextView">
+        <item name="android:layout_marginTop">20sp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/text_highlight</item>
+    </style>
+    <style name="Default_title" parent="@style/title_style">
+        <item name="android:textColor">@color/default_color</item>
+    </style>
+    <style name="lableStyle" parent="android:Widget.TextView">
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:layout_marginTop">50sp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="promptBox_stye" parent="android:Widget.EditText">
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:layout_marginLeft">15sp</item>
+        <item name="android:layout_marginRight">10sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+    </style>
+</resources>
