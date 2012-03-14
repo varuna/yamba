@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference android:title="@string/pref_user_title" android:key="PREF_USER"/>
+    <EditTextPreference android:title="@string/prefr_password_title" android:key="PREF_PASSWORD"/>
+    <EditTextPreference android:title="@string/pref_site_url" android:defaultValue="http://yamba.marakana.com/api" android:summary="@string/pref_site_url_summery" android:key="PREF_SITE_URL"/>
+    
+
+</PreferenceScreen>

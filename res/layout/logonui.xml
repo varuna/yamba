@@ -12,45 +12,37 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/loginui_title"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:layout_marginTop="20sp"
-        android:entries="@array/servicesSpinnerItems" />
-
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/usernameTextView"
         style="@style/lableStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/username_prompt" />
-
+
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/usernameEditText"
         style="@style/promptBox_stye"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <requestFocus />
     </EditText>
-
+
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/passwordTextView"
         style="@style/lableStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/password_prompt"
         android:textAppearance="?android:attr/textAppearanceMedium" />
-
+
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/passwordEditText"
+        style="@style/promptBox_stye"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword" style="@style/promptBox_stye"/>
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/LoginClickButton"
@@ -60,12 +52,5 @@
         android:layout_marginRight="10sp"
         android:layout_marginTop="20sp"
         android:text="@string/loginRequestButtonTitle" />
-
-    <Button
-        android:id="@+id/publicTimelineButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5sp"
-        android:text="@string/ShowpublicTimelineButtonText" />
 
 </LinearLayout>

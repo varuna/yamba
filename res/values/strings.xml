@@ -18,5 +18,12 @@
         <string name="ShowpublicTimelineButtonText">Public Timeline</string>
         <string name="post_success">Successful post</string>
         <string name="post_fail">Failed to post</string>
+        <string name="pref_user_title">User Name</string>
+        <string name="logoutRequestButtonTitle">Logout</string>
+        <string name="prefr_password_title">Password</string>
+        <string name="pref_site_url">Site URL</string>
+        <string name="pref_site_url_summery">Enter the API url here</string>
+        <string name="menu_preferences_title">Settings</string>
+        <string name="menu_preferences_title_cond">Settings</string>
 
 </resources>
