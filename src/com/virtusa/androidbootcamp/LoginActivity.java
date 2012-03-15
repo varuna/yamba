@@ -1,17 +1,12 @@
 package com.virtusa.androidbootcamp;
 
-import java.util.List;
-
 import android.app.Activity;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import winterwell.jtwitter.*;
-import winterwell.jtwitter.Twitter.Status;
 
 public class LoginActivity extends Activity implements OnClickListener {
 

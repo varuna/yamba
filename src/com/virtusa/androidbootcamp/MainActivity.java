@@ -18,12 +18,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		SharedPreferences pref = getSharedPreferences("JTWITTER_LOGIN_DETAILS",
-				MODE_PRIVATE);
-		if (pref.getString("JTWITTER_USERNAME", "error").equals("error")) {
-			Intent intent = new Intent(this, LoginActivity.class);
-			startActivity(intent);
-		}
+//		SharedPreferences pref = getSharedPreferences("JTWITTER_LOGIN_DETAILS",
+//				MODE_PRIVATE);
+//		if (pref.getString("JTWITTER_USERNAME", "error").equals("error")) {
+//			Intent intent = new Intent(this, LoginActivity.class);
+//			startActivity(intent);
+//		}
 		Button logoutButton = (Button) findViewById(R.id.logoutButton);
 		logoutButton.setOnClickListener(this);
 	}
@@ -40,7 +40,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		int id = item.getItemId();
 		switch (id) {
 		case R.id.menu_prefences:
-
+			Intent intent = new Intent(this, PrefsActivity.class);
+			startActivity(intent);
 			return true;
 
 		default:
@@ -54,8 +55,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		SharedPreferences pref = getSharedPreferences("JTWITTER_LOGIN_DETAILS",
 				MODE_PRIVATE);
 		SharedPreferences.Editor prefEditor = pref.edit();
-		prefEditor.remove("JTWITTER_USERNAME");
-		prefEditor.remove("JTWITTER_PASSWORD");
+		prefEditor.putString("JTWITTER_USERNAME","");
+		prefEditor.putString("JTWITTER_PASSWORD","");
 		prefEditor.commit();
 		Intent intent = new Intent(this, LoginActivity.class);
 		startActivity(intent);

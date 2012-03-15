@@ -34,15 +34,14 @@ public final class R {
         public static final int LoginClickButton=0x7f0a0008;
         public static final int PostTweetButton=0x7f0a0002;
         public static final int StatusEditText=0x7f0a0000;
-        public static final int fragment1=0x7f0a000b;
-        public static final int frame_layout_parent=0x7f0a0009;
-        public static final int listView1=0x7f0a000e;
-        public static final int logoutButton=0x7f0a000c;
-        public static final int menu_prefences=0x7f0a000f;
+        public static final int fragment1=0x7f0a000a;
+        public static final int listView1=0x7f0a000d;
+        public static final int logoutButton=0x7f0a000b;
+        public static final int menu_prefences=0x7f0a000e;
         public static final int passwordEditText=0x7f0a0007;
         public static final int passwordTextView=0x7f0a0006;
-        public static final int publicTimeLineView=0x7f0a000d;
-        public static final int statusTitleTextView=0x7f0a000a;
+        public static final int publicTimeLineView=0x7f0a000c;
+        public static final int statusTitleTextView=0x7f0a0009;
         public static final int textView1=0x7f0a0003;
         public static final int usernameEditText=0x7f0a0005;
         public static final int usernameTextView=0x7f0a0004;
@@ -85,5 +84,6 @@ public final class R {
     }
     public static final class xml {
         public static final int prefs=0x7f040000;
+        public static final int prefs_headers=0x7f040001;
     }
 }

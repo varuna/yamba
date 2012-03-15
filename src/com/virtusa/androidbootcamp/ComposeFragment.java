@@ -1,8 +1,6 @@
 package com.virtusa.androidbootcamp;
 
-import winterwell.jtwitter.Twitter;
 import winterwell.jtwitter.TwitterException;
-import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -24,23 +22,11 @@ public class ComposeFragment extends Fragment implements OnClickListener,
 	private static final String TAG = "ComposeFragment";
 	private EditText characterSet;
 	private Toast mToast;
-	private Twitter t;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
 		setRetainInstance(true);
-		SharedPreferences pref = getActivity().getSharedPreferences("JTWITTER_LOGIN_DETAILS",getActivity().MODE_PRIVATE);
-		String username = pref.getString("JTWITTER_USERNAME", "error");
-		String password = pref.getString("JTWITTER_PASSWORD", "error");
-		if (username.equals("error") || password.equals("error"))			
-			t = new Twitter("student", "password");
-		else{
-			t = new Twitter(username,password);
-			Log.i("JTWITTER_LOGIN_DETAILS", username + password);
-		}
-		t.setAPIRootUrl("http://yamba.marakana.com/api");
 	}
 
 	@Override
@@ -56,7 +42,8 @@ public class ComposeFragment extends Fragment implements OnClickListener,
 		postButton.setOnClickListener(this);
 		charCountDisp.setText("remaining : 140");
 		characterSet.setOnKeyListener(this);
-		mToast = Toast.makeText(getActivity().getApplicationContext(), null, Toast.LENGTH_LONG);
+		mToast = Toast.makeText(getActivity().getApplicationContext(), null,
+				Toast.LENGTH_LONG);
 		return top;
 	}
 
@@ -85,18 +72,17 @@ public class ComposeFragment extends Fragment implements OnClickListener,
 	public boolean onKey(View v, int keyCode, KeyEvent event) {
 		Log.v(TAG, String.valueOf(keyCode));
 //		EditText charSet = (EditText) v;
-//		// TextView charCount = (TextView)
-//		// findViewById(R.id.CharacterCountTextView);
+//		TextView charCount = (TextView)findViewById(R.id.CharacterCountTextView);
 //		int maxCharacters = 140;
 //		int currentCount = maxCharacters - charSet.getText().length();
-		// if (currentCount > 0)
-		// // charCount.setText("remaining : " + String.valueOf(currentCount));
-		// else {
-		// charCount.setTextColor(Color.RED);
-		// charCount.setBackgroundColor(Color.WHITE);
-		// charCount.setText(" Message too long, remove : "
-		// + String.valueOf(currentCount) + " Characters ");
-		// }
+//		if (currentCount > 0)
+//			charCount.setText("remaining : " + String.valueOf(currentCount));
+//		else {
+//			charCount.setTextColor(Color.RED);
+//			charCount.setBackgroundColor(Color.WHITE);
+//			charCount.setText(" Message too long, remove : "
+//					+ String.valueOf(currentCount) + " Characters ");
+//		}
 		return false;
 	}
 
@@ -107,7 +93,8 @@ public class ComposeFragment extends Fragment implements OnClickListener,
 			int result = R.string.post_success;
 
 			try {
-				t.setStatus(params[0]);
+				YambaApplication.getInstance().getTwitter()
+						.setStatus(params[0]);
 			} catch (TwitterException e) {
 				Log.w(TAG, "Failed to post" + e.getMessage(), e);
 				result = R.string.post_fail;
