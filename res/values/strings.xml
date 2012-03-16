@@ -25,5 +25,15 @@
         <string name="pref_site_url_summery">Enter the API url here</string>
         <string name="menu_preferences_title">Settings</string>
         <string name="menu_preferences_title_cond">Settings</string>
+        <string name="menu_start_service_title">Start Timeline Service</string>
+        <string name="menu_start_service_title_cond">Start updates</string>
+        <string name="menu_stop_service_title">Stop Timeline Service</string>
+        <string name="menu_stop_service_title_cond">Stop updates</string>
+        <string name="menu_refresh_title">Refresh Timeline</string>
+        <string name="menu_refresh_title_cond">Refresh</string>
+        <string name="menu_post_title">Compose new status</string>
+        <string name="menu_post_title_cond">Compose</string>
+        <string name="menu_timeline_title">Show user timeline</string>
+        <string name="menu_timeline_title_cond">View timeline</string>
 
 </resources>

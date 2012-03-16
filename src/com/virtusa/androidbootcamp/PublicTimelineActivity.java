@@ -25,11 +25,13 @@ public class PublicTimelineActivity extends Activity {
 		Twitter t = new Twitter();
 		// Twitter t= new Twitter("student","password");
 //		t.setAPIRootUrl("http://yamba.marakana.com/api");
+		@SuppressWarnings("unused")
 		List<Status> statuses = t.getPublicTimeline();
 		timeline = (LinearLayout) findViewById(R.id.publicTimeLineView);
 		
 	}
 	
+	@SuppressWarnings("unused")
 	private class PublicTimeLine extends AsyncTask<Void, Void, List<Status>>
 	{
 

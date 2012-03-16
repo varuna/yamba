@@ -34,14 +34,18 @@ public final class R {
         public static final int LoginClickButton=0x7f0a0008;
         public static final int PostTweetButton=0x7f0a0002;
         public static final int StatusEditText=0x7f0a0000;
-        public static final int fragment1=0x7f0a000a;
-        public static final int listView1=0x7f0a000d;
-        public static final int logoutButton=0x7f0a000b;
-        public static final int menu_prefences=0x7f0a000e;
+        public static final int data_date=0x7f0a000e;
+        public static final int data_msg=0x7f0a000d;
+        public static final int data_user=0x7f0a000c;
+        public static final int fragment_container=0x7f0a0009;
+        public static final int listView1=0x7f0a000b;
+        public static final int menu_post=0x7f0a000f;
+        public static final int menu_prefences=0x7f0a0011;
+        public static final int menu_refresh=0x7f0a0012;
+        public static final int menu_timeline=0x7f0a0010;
         public static final int passwordEditText=0x7f0a0007;
         public static final int passwordTextView=0x7f0a0006;
-        public static final int publicTimeLineView=0x7f0a000c;
-        public static final int statusTitleTextView=0x7f0a0009;
+        public static final int publicTimeLineView=0x7f0a000a;
         public static final int textView1=0x7f0a0003;
         public static final int usernameEditText=0x7f0a0005;
         public static final int usernameTextView=0x7f0a0004;
@@ -51,9 +55,12 @@ public final class R {
         public static final int logonui=0x7f030001;
         public static final int main=0x7f030002;
         public static final int publictimeline=0x7f030003;
+        public static final int timeline_row=0x7f030004;
     }
     public static final class menu {
-        public static final int options_main=0x7f090000;
+        public static final int option_main_fragment_control=0x7f090000;
+        public static final int options_main=0x7f090001;
+        public static final int options_timeline_fragment=0x7f090002;
     }
     public static final class string {
         public static final int ShowpublicTimelineButtonText=0x7f060009;
@@ -62,8 +69,18 @@ public final class R {
         public static final int loginRequestButtonTitle=0x7f060008;
         public static final int loginui_title=0x7f060005;
         public static final int logoutRequestButtonTitle=0x7f06000d;
+        public static final int menu_post_title=0x7f060019;
+        public static final int menu_post_title_cond=0x7f06001a;
         public static final int menu_preferences_title=0x7f060011;
         public static final int menu_preferences_title_cond=0x7f060012;
+        public static final int menu_refresh_title=0x7f060017;
+        public static final int menu_refresh_title_cond=0x7f060018;
+        public static final int menu_start_service_title=0x7f060013;
+        public static final int menu_start_service_title_cond=0x7f060014;
+        public static final int menu_stop_service_title=0x7f060015;
+        public static final int menu_stop_service_title_cond=0x7f060016;
+        public static final int menu_timeline_title=0x7f06001b;
+        public static final int menu_timeline_title_cond=0x7f06001c;
         public static final int password_prompt=0x7f060007;
         public static final int postButtonText=0x7f060003;
         public static final int post_fail=0x7f06000b;
